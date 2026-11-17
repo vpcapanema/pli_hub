@@ -484,7 +484,7 @@
       { theme:'analysis', name:'Densidade Malha SP',         icon:'fas fa-road',                 iconBg:'linear-gradient(135deg,#116593,#003b5a)', url:'https://56.125.163.194/sigma-apps/densidade-malha/',                    desc:'Análise de densidade da malha viária estadual paulista com visualizações por trecho e região.' },
       // Ferramentas Analíticas e de Produção
       { theme:'tools',    name:'PLI Aplications Midea', icon:'fas fa-photo-video', iconBg:'linear-gradient(135deg,#116593,#2a9450)', url:'https://56.125.163.194/midia/', desc:'Apresentações, tutoriais em vídeo, guias técnicos e peças de divulgação das aplicações do PLI/SP-2050, com arquivos para consulta e download.' },
-      { theme:'tools',    name:'Calculadora de Aderência de Indicadores 2.0',  icon:'fas fa-calculator',           iconBg:'linear-gradient(135deg,#3ec26e,#2a9450)', url:'https://56.125.163.194/sigma-apps/calculadora-aderencia/',              desc:'Calculadora de aderência de indicadores para avaliação de conformidade de metas e resultados.' },
+      { theme:'tools',    name:'Calculadora de Aderência de Indicadores 2.0',  icon:'fas fa-calculator',           iconBg:'linear-gradient(135deg,#3ec26e,#2a9450)', url:'https://56.125.163.194/sigma-apps/calculadora-aderencia',               desc:'Calculadora de aderência de indicadores para avaliação de conformidade de metas e resultados.' },
       { theme:'tools',    name:'AHP Tool Calculator',        icon:'fas fa-balance-scale',        iconBg:'linear-gradient(135deg,#1c3d59,#003b5a)', url:'https://56.125.163.194/sigma-apps/ahp/',                                desc:'Ferramenta de análise hierárquica de processos (AHP) para priorização e ponderação de critérios.' },
       { theme:'tools',    name:'Formulário de Entrevista com Embarcadores',    icon:'fas fa-clipboard-list',       iconBg:'linear-gradient(135deg,#116593,#003b5a)', url:'https://56.125.163.194/sigma-apps/formulario-embarcadores/',             desc:'Formulário de entrevista com embarcadores para levantamento de dados logísticos e de transporte.' },
     ];
@@ -615,7 +615,7 @@
     render();
 
     if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => { navigator.serviceWorker.register('/pli-hub/sw.js?v=20261117c', { scope: '/pli-hub/' }).catch(() => {}); });
+      window.addEventListener('load', () => { navigator.serviceWorker.register('/pli-hub/sw.js?v=20261117d', { scope: '/pli-hub/' }).catch(() => {}); });
     }
     </script>
   </body>

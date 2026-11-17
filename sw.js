@@ -1,4 +1,4 @@
-const CACHE_VERSION = "pli-hub-v9";
+const CACHE_VERSION = "pli-hub-v10";
 
 const PRECACHE = [
   "/pli-hub/",

@@ -150,6 +150,7 @@
         overflow: hidden;
         -webkit-user-select: none;
         user-select: none;
+        text-decoration: none;
       }
       .nav-item:hover { background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.9); }
       .nav-item.active {
@@ -434,7 +435,6 @@
             <span class="tb-sub">Central de Aplicações Web</span>
           </div>
           <div class="topbar-spacer"></div>
-          <a href="glossario.html" style="color:inherit;font:inherit;text-decoration:underline;text-underline-offset:3px">Glossário técnico-conceitual</a>
           <div class="topbar-stats" id="topbarStats"></div>
           <div class="topbar-search">
             <i class="fas fa-search ts-icon"></i>
@@ -511,6 +511,15 @@
         const count = APPS.filter(a => a.theme === th.id).length;
         nav.appendChild(makeNavItem(th.id, th.dot, th.name, count));
       });
+      const resourcesLabel = document.createElement('div');
+      resourcesLabel.className = 'nav-section-label';
+      resourcesLabel.textContent = 'Recursos';
+      nav.appendChild(resourcesLabel);
+      const glossaryLink = document.createElement('a');
+      glossaryLink.className = 'nav-item';
+      glossaryLink.href = 'glossario.html';
+      glossaryLink.innerHTML = '<i class="fas fa-book-open nav-dot" aria-hidden="true" style="width:14px;height:auto;color:#3ec26e"></i><span class="nav-label">Glossário técnico-conceitual</span>';
+      nav.appendChild(glossaryLink);
     }
 
     function makeNavItem(id, dot, label, count) {
@@ -616,7 +625,7 @@
     render();
 
     if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => { navigator.serviceWorker.register('/pli-hub/sw.js?v=20261117f', { scope: '/pli-hub/' }).catch(() => {}); });
+      window.addEventListener('load', () => { navigator.serviceWorker.register('/pli-hub/sw.js?v=20261117g', { scope: '/pli-hub/' }).catch(() => {}); });
     }
     </script>
   </body>

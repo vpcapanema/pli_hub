@@ -7,3 +7,21 @@ apresentacao/imagens/_pptx/
 # Lixo de ferramentas
 __pycache__/
 ~$*
+desktop.ini
+
+# Perfis descartaveis de navegador usados em validacoes visuais
+/.ahp-proof-*/
+/.hero-qa-profile/
+/.profile-*/
+
+# Evidencias e areas intermediarias regeneraveis
+/.visual_audit/
+/apresentacao/.tmp_pli_deck/
+
+# Saidas locais preservadas, mas fora do controle de versao
+/apresentacao/prints_telas/
+/apresentacao/Apresentacao_Aplicacoes_PLI*.pptx
+/apresentacao/WhatsApp Image *.jpeg
+/apresentacao/apresentacao.code-workspace
+/formulario-final.png
+/hub-final.png
